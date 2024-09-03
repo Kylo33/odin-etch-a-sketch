@@ -1,11 +1,23 @@
+
+
 #grid {
     width: 960px;
     display: flex;
     flex-wrap: wrap;
+    margin: 8px;
+}
+
+button {
+    margin: 8px;
+    display: block;
 }
 
 .box {
     background-color: lightgray;
     border: 1px solid black;
     box-sizing: border-box;
+}
+
+body {
+    margin: 0;
 }
