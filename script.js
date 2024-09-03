@@ -11,3 +11,9 @@ for (let i = 0, n = size ** 2; i < n; i++) {
     box.style.minHeight = `${squareSize}px`;
     grid.appendChild(box);
 }
+
+document.addEventListener("mouseover", e => {
+    if (e.target.classList.contains("box")) {
+        e.target.style.backgroundColor = "black";
+    }
+})
