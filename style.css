@@ -1,10 +1,9 @@
-
-
 #grid {
     width: 960px;
     display: flex;
     flex-wrap: wrap;
     margin: 8px;
+    background-color: black;
 }
 
 button {

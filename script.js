@@ -24,7 +24,9 @@ document.querySelector("button").addEventListener("click", e => {
 
 document.addEventListener("mouseover", e => {
     if (e.target.classList.contains("box")) {
-        e.target.style.backgroundColor = "black";
+        const opacity = getComputedStyle(e.target).getPropertyValue("opacity")
+        if (opacity > 0)
+            e.target.style.opacity = opacity - 0.1;
     }
 })
 
